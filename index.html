@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="logo">My<span>Portfolio</span></div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Hello, I'm</p>
+            <h1>Yashvant Gautam</h1>
+            <p class="subtitle">MCA Student at NIT Trichy</p>
+            <p class="hero-text">
+              I am currently pursuing my Master of Computer Applications (MCA) at
+              NIT Trichy. I’m passionate about technology, problem solving, and
+              building projects that help me grow my skills in software
+              development.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn primary">View Projects</a>
+              <a href="#contact" class="btn ghost">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="profile-image-wrapper">
+              <img src="images/IMAGE.png" alt="Yashvant Gautam" class="profile-image" />
+            </div>
+            <p class="hero-card-name">Yashvant Gautam</p>
+            <p class="hero-card-role">MCA Student · Aspiring Developer</p>
+            <div class="hero-card-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About Me</h2>
+          <p class="section-text">
+            My name is Yashvant Gautam and I am currently doing my MCA at NIT
+            Trichy. I am interested in software development and continuously
+            learning new technologies to improve my skills. I enjoy working on
+            projects that challenge me to think logically and creatively, and I
+            am looking forward to building a strong career in the tech industry.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="grid projects-grid">
+            <article class="card">
+              <h3>QR-Based Billing System</h3>
+              <p>
+                A modern billing system that uses QR codes for quick and efficient
+                transaction processing. Streamlines the billing process and provides
+                a seamless payment experience.
+              </p>
+              <div class="card-footer">
+                <span class="tag">QR Code</span>
+                <span class="tag">Billing</span>
+                <a href="#" class="card-link">View project</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Country Word Game</h3>
+              <p>
+                An interactive word game based on country names where players can
+                explore detailed information about different countries. Combines
+                entertainment with educational content about world geography.
+              </p>
+              <div class="card-footer">
+                <span class="tag">Word Game</span>
+                <span class="tag">API</span>
+                <a href="#" class="card-link">View project</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Multiplayer Trivia Game</h3>
+              <p>
+                A real-time multiplayer trivia game where random questions are
+                displayed and players compete to answer first. Fastest correct
+                answer scores points, creating an engaging competitive experience.
+              </p>
+              <div class="card-footer">
+                <span class="tag">Multiplayer</span>
+                <span class="tag">Real-time</span>
+                <a href="#" class="card-link">View project</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="grid skills-grid">
+            <div class="skill-column">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+            <div class="skill-column">
+              <h3>Tools</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+            <div class="skill-column">
+              <h3>Soft Skills</h3>
+              <ul>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Communication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-grid">
+          <div>
+            <h2>Contact</h2>
+            <p class="section-text">
+              Feel free to reach out if you want to collaborate, have a
+              question, or just want to say hi.
+            </p>
+            <ul class="contact-list">
+              <li><span>Email:</span> <a href="mailto:yashvant.2003@gmail.com">yashvant.2003@gmail.com</a></li>
+              <li><span>GitHub:</span> <a href="https://github.com/yashvantgautam">yashvantgautam</a></li>
+              <li><span>LinkedIn:</span> <a href="https://linkedin.com/in/yashvantgautam">yashvantgautam</a></li>
+            </ul>
+          </div>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn primary full-width">
+              Send Message
+            </button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Yashvant Gautam. All rights reserved.</p>
+        <a href="#top" class="back-to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+men
